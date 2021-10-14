@@ -1,0 +1,90 @@
+
+
+    // Post method request to add new training center with the fields...
+	
+  // URL =>  http://localhost:8080/api/add-center
+
+
+{
+      "centerName": "PMKVY-CENTER",
+      "centerCode": "002122121212",
+  "studentCapacity": 20,
+  "contactEmail" : "pmkvy00121@gmail.com",
+  "contactPhone" : 9927123422,
+  "address":{
+      "detailedAddress" : "New Orleans",
+      "city" : "New Orleans",
+      "state" : "Southompton",
+      "pinCode" : "202210" 
+  },
+  "coursesOffered" : [
+      {
+          "courseName"  : "Human Anatomy"
+      },
+      {
+          "courseName": "Computer Research"
+      }
+  ]
+}
+
+
+   // Get method to get the list of available training centers...
+   
+   // URL=> http://localhost:8080/api/centers
+   
+   
+   // fetched information of training centers 
+   
+   
+    [
+    {
+        "centerId": 1,
+        "centerName": "PMKVY-CENTER",
+        "centerCode": "002122121212",
+        "studentCapacity": 20,
+        "contactEmail": "pmkvy00121@gmail.com",
+        "createdOn": "2021-10-14T07:26:25.294Z",
+        "contactPhone": "9927123422",
+        "address": {
+            "detailedAddress": "New Orleans",
+            "city": "New Orleans",
+            "state": "Southompton",
+            "pinCode": "202210"
+        },
+        "coursesOffered": [
+            {
+                "courseId": 1,
+                "courseName": "Human Anatomy"
+            },
+            {
+                "courseId": 2,
+                "courseName": "Computer Research"
+            }
+        ]
+    },
+    {
+        "centerId": 2,
+        "centerName": "HNBGU-CENTER",
+        "centerCode": "000000000012",
+        "studentCapacity": 30,
+        "contactEmail": "hnbgu001@gmail.com",
+        "createdOn": "2021-10-14T07:33:19.393Z",
+        "contactPhone": "9927123432",
+        "address": {
+            "detailedAddress": "Mystic Falls",
+            "city": "Mystic Falls",
+            "state": "Virginia",
+            "pinCode": "2002020"
+        },
+        "coursesOffered": [
+            {
+                "courseId": 3,
+                "courseName": "Robotics"
+            },
+            {
+                "courseId": 4,
+                "courseName": "Soft Skills Development"
+            }
+        ]
+    }
+]
